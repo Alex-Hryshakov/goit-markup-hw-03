@@ -13,6 +13,42 @@
   --accent-color: #2196f3;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--primary-font), sans-serif;
   font-size: 14px;
@@ -20,29 +56,85 @@ body {
   color: var(--primary-text-color);
   background-color: #ffffff;
 }
-.list {
-  list-style: none;
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.link {
-  text-decoration: none;
+
+.title {
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* ===================================HEADER=================================== */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.header {
+  border: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-text {
+  padding: 15px 0;
+}
+
+.contact-text-phone {
+  margin-left: 50px;
+}
+
 .logo-link-header {
+  margin-right: 93px;
+  padding: 15px 0;
   font-family: var(--secondary-font);
   font-weight: var(--primary-font-weight);
   font-size: 26px;
   line-height: 1.19;
   color: var(--fourty-text-color);
 }
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .accent {
   color: var(--accent-color);
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
 }
+
 .menu-link {
+  padding: 15px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -57,16 +149,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
 .contact-text:hover,
 .contact-text:focus {
   color: var(--accent-color);
 }
 
 /*========================================== HERO =========================================*/
-.hero,
-.footer {
+.hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  align-items: center;
   background-color: var(--primary-bcg);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -76,7 +172,18 @@ body {
   text-transform: uppercase;
   color: var(--thirty-text-color);
 }
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .modal-btn {
+  padding: 10px 40px;
+  border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: var(--primary-font-weight);
@@ -87,47 +194,98 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--thirty-text-color);
-  cursor: pointer;
 }
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #188ce8;
 }
+
 /* ========================================= PLUS =========================================*/
+.plus-list {
+  display: flex;
+}
 
 .plus-title {
+  margin-bottom: 10px;
   font-size: var(--secondary-font-size);
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .plus-text {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
 
+/* ========================================= EXAMPLES ======================================*/
+.examples-list {
+  display: flex;
+}
+
+.examples-img:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*=========================================== TEAM ===========================================*/
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-name-title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
 
 .section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 .team {
   background-color: var(--secondary-bcg);
 }
+
 .team-name-title {
   font-weight: 500;
   font-size: var(--primary-font-size);
   line-height: 1.19;
   text-align: center;
 }
+
 .team-speciality {
+  padding-bottom: 30px;
   font-size: var(--primary-font-size);
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
 }
+
 /*======================================== FOOTER ========================================*/
+
+.footer {
+  background-color: var(--primary-bcg);
+}
+
+.logo-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.address-list {
+  padding-bottom: 60px;
+}
+
+.contact-item:not(:last-child) {
+  padding: 9px 0;
+}
+
 .logo-link-footer {
   font-family: var(--secondary-font);
   font-weight: var(--primary-font-weight);
@@ -145,16 +303,33 @@ body {
 }
 
 /* =====================================OUR PORTFOLIO ===================================== */
+
 .nav-on-portfolio-text:hover,
 .nav-on-portfolio-text:focus {
   background-color: var(--accent-color);
   color: var(--thirty-text-color);
 }
+
+.nav-on-portfolio-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+.btn-portfolio:not(:last-child) {
+  margin-right: 8px;
+}
+
 .nav-on-portfolio-text.current {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
 .nav-on-portfolio-text {
+  padding: 6px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
   background-color: var(--secondary-bcg);
   font-family: inherit;
   font-weight: 500;
@@ -162,22 +337,37 @@ body {
   line-height: 1.62;
   text-align: center;
   color: var(--primary-text-color);
-  cursor: pointer;
 }
+
+.portfolio-img-text {
+  padding: 20px 24px;
+}
+
+.portfolio-examples-item {
+  border-top: 1px solid #eeeeee;
+}
+
+.portfolio-examples-list {
+  display: flex;
+  gap: 30px;
+  padding-top: 34px;
+  padding-bottom: 94px;
+  flex-wrap: wrap;
+}
+
 .portfolio-examples-title {
   font-weight: var(--primary-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .portfolio-examples-text {
   font-size: var(--primary-font-size);
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
+
 .menu-link-current {
   color: var(--accent-color);
 }
-/* .nav-first-current {
-  background-color: #ffffff;
-} */
