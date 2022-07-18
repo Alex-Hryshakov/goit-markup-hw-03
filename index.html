@@ -41,10 +41,10 @@
           </ul>
         </nav>
         <ul class="contact list">
-          <li class="contact-item">
+          <li class="contact-item-header">
             <a class="contact-text link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="contact-item">
+          <li class="contact-item-header">
             <a class="contact-text contact-text-phone link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -55,13 +55,9 @@
     <main>
       <!--Hero-->
 
-      <section class="hero">
-        <div class="container"></div>
-        <h1 class="hero-title">
-          Эффективные решения для <br />
-          вашего бизнеса
-        </h1>
-        <div class="hero-button">
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="modal-btn" type="button">Заказать услугу</button>
         </div>
       </section>
@@ -102,37 +98,39 @@
       </section>
 
       <!--Примеры работ-->
-      <section class="examples section container">
-        <h2 class="section-title title">Чем мы занимаемся</h2>
-        <ul class="examples-list list">
-          <li class="examples-img">
-            <img
-              class="picturet"
-              src="./images/box1.jpg"
-              alt="визуальный пример работы 1"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="picture">
-            <img
-              class="examples-pict"
-              src="./images/box2.jpg"
-              alt="визуальный пример работы 2"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="picture">
-            <img
-              class="examples-pict"
-              src="./images/box3.jpg"
-              alt="визуальный пример работы 3"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="examples section">
+        <div class="container">
+          <h2 class="section-title title">Чем мы занимаемся</h2>
+          <ul class="examples-list list">
+            <li class="examples-img picture">
+              <img
+                class="picturet"
+                src="./images/box1.jpg"
+                alt="визуальный пример работы 1"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="examples-img picture">
+              <img
+                class="examples-pict"
+                src="./images/box2.jpg"
+                alt="визуальный пример работы 2"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="examples-img picture">
+              <img
+                class="examples-pict"
+                src="./images/box3.jpg"
+                alt="визуальный пример работы 3"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Команда-->
       <section class="team section">
@@ -185,17 +183,15 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
-        <div class="logo-footer">
-          <a class="logo-link-footer link" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
-          >
-        </div>
+        <a class="logo-link-footer link" href="./index.html"
+          ><span class="accent">Web</span>Studio</a
+        >
 
         <address class="address">
           <ul class="address-list list">
-            <li class="address-item">
+            <li class="contact-item">
               <a class="address-text link" href="">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="contact-item">
