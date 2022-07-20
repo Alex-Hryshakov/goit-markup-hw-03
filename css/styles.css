@@ -22,6 +22,20 @@ p {
   margin-bottom: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -104,7 +118,7 @@ body {
   padding: 15px 0;
 }
 
-.contact-text-phone {
+.contact-item-header {
   margin-left: 50px;
 }
 
@@ -263,7 +277,6 @@ body {
 }
 
 .team-name-title {
-  padding-top: 30px;
   font-weight: 500;
   font-size: var(--primary-font-size);
   line-height: 1.19;
@@ -271,7 +284,6 @@ body {
 }
 
 .team-speciality {
-  padding-bottom: 30px;
   font-size: var(--primary-font-size);
   line-height: 1.19;
   text-align: center;
@@ -314,20 +326,6 @@ body {
 
 /* =====================================OUR PORTFOLIO ===================================== */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .nav-on-portfolio-text:hover,
 .nav-on-portfolio-text:focus {
   background-color: var(--accent-color);
@@ -369,7 +367,7 @@ body {
 
 .portfolio-examples-item {
   background: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
 }
 
