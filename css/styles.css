@@ -114,12 +114,12 @@ body {
   margin-left: auto;
 }
 
-.contact-text {
-  padding: 15px 0;
+.contact-item-header:not(:first-child) {
+  margin-left: 50px;
 }
 
-.contact-item-header {
-  margin-left: 50px;
+.contact-text {
+  padding: 15px 0;
 }
 
 .logo-link-header {
